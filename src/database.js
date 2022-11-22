@@ -11,8 +11,8 @@ const sqlConfig = {
       idleTimeoutMillis: 30000
     },
     options: {
-      encrypt: true, // for azure
-      trustServerCertificate: true // change to true for local dev / self-signed certs
+      encrypt: true // for azure
+      //trustServerCertificate: true // change to true for local dev / self-signed certs
     }
 }
 
@@ -24,5 +24,3 @@ const conectar = async function (){
         console.log(error);
     }
 }();
-
-module.exports = { sql, sqlConfig };
