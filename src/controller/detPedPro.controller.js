@@ -2,7 +2,7 @@ const { validationResult } = require("express-validator");
 const sql = require("mssql");
 const { queries } = require("../helpers/functions");
 
-detPedPro = {};
+const detPedPro = {};
 
 detPedPro.getDetPedPro = async (req, res) => {
   const request = new sql.Request();

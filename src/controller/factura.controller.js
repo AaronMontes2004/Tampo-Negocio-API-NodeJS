@@ -1,7 +1,7 @@
 const sql = require("mssql");
 const { queries } = require("../helpers/functions");
 
-facturaCtr = {};
+const facturaCtr = {};
 
 facturaCtr.getFactura = async (req, res) => {
   const request = new sql.Request();

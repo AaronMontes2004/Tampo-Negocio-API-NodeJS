@@ -1,7 +1,7 @@
 const sql = require("mssql");
 const { queries } = require("../helpers/functions");
 
-pedidoCtr = {};
+const pedidoCtr = {};
 
 pedidoCtr.getPedidos = (req, res) => {
   const request = new sql.Request();
